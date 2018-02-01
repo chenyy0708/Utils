@@ -11,4 +11,4 @@ allprojects {
     }
 }
 
-compile 'com.github.chenyy0708:CyyUtils:v1.0.0'
+`compile 'com.github.chenyy0708:CyyUtils:v1.0.0'`
