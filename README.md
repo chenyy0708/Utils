@@ -40,7 +40,6 @@ isEmpty                          : 判断集合是否为null或者0个元素
 addEditTexts                          : 添加需要监听EditText，任意个
 addInputLimit                         : 添加每个EditText对应的输入字符触发条件，可以为空
 addOnInputListener                    : 所有EditText全部输入完成
-
 ```
 
 
