@@ -19,20 +19,20 @@
 
 * ### APP通用 -> [AppUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/AppUtils.java) 
 ```
-getString                      : 获取Assets目录下对应文件名的内容
-getVersionCode                 : 获取当前本地apk的版本Code
-getVersionName                 : 获取当前本地apk的版本号
+getString                             : 获取Assets目录下对应文件名的内容
+getVersionCode                        : 获取当前本地apk的版本Code
+getVersionName                        : 获取当前本地apk的版本号
 ```
 * ### 涟漪动画 -> [CircularAnim.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/CircularAnim.java) 
 
 ```
-show                            : 伸展并显示
-hide                            : 收缩并隐藏
-fullActivity                    : 涟漪动画铺满整个activity
+show                                  : 伸展并显示
+hide                                  : 收缩并隐藏
+fullActivity                          : 涟漪动画铺满整个activity
 ```
 * ### 集合 -> [CollectionUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/CollectionUtils.java) 
 ```
-isEmpty                          : 判断集合是否为null或者0个元素
+isEmpty                               : 判断集合是否为null或者0个元素
 ```
 
 * ### EditText -> [EditTextUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/EditTextUtils.java) 
