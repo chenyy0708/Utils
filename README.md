@@ -14,4 +14,4 @@
 ```
 ## 引入项目
 
-`implementation 'com.github.chenyy0708:CyyUtils:1.0.1'`
+`implementation 'com.github.chenyy0708:Utils:1.0.1'`
