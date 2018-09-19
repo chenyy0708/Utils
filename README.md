@@ -59,9 +59,9 @@ isIdCardNo                             : 判断身份证格式
 * ### 键盘 -> [KeybordUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/KeybordUtils.java) 
 
 ```
-openKeybord                               : 打开软键盘
-closeKeybord                              : 关闭软键盘
-closeAllKeybord                           : 关闭所有View软键盘
-isSoftInputShow                           : 判断当前软键盘是否打开
+openKeybord                             : 打开软键盘
+closeKeybord                            : 关闭软键盘
+closeAllKeybord                         : 关闭所有View软键盘
+isSoftInputShow                         : 判断当前软键盘是否打开
 ```
 
