@@ -1,1 +1,1 @@
-include ':app', ':cyylibrary'
+include ':app', ':library'

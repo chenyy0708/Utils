@@ -1,0 +1,12 @@
+ext {
+
+    android = [ // 配置信息
+                compileSdkVersion: 27,
+                buildToolsVersion: "27.0.2",
+                minSdkVersion    : 15,
+                targetSdkVersion : 22,
+                versionCode      : 30,
+                versionName      : "1.0.0"
+    ]
+    supportVersion = "27.0.2"
+}

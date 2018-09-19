@@ -1,4 +1,4 @@
-package com.cyy.cyylibrary;
+package com.cyy.utils;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
