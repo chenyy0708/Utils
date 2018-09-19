@@ -5,12 +5,13 @@
 
 
  ```
-allprojects {
-    repositories {
-        jcenter()
-        maven { url 'https://jitpack.io' }
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url 'https://jitpack.io' }
+        }
     }
-}
 ```
 ## 引入项目
-`compile 'com.github.chenyy0708:CyyUtils:v1.0.0'`
+
+`implementation 'com.github.chenyy0708:CyyUtils:1.0.1'`
