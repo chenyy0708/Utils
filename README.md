@@ -45,23 +45,23 @@ addOnInputListener                    : 所有EditText全部输入完成
 
 * ### 正则判断 -> [FormatUtil.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/FormatUtil.java) 
 ```
-isMobile                               : 判断手机格式是否正确
-isEmail                                : 判断email格式是否正确
-isNumeric                              : 判断是否全是数字
-isIdCardNo                             : 判断身份证格式
-checkNameChese                         : 检测String是否全是中文
-phoneSetMiddleGone                     : 将手机号变成 151****7788 格式
-phoneSetMiddleEmpty                    : 将手机号变成 151 2233 7788 格式
-isIdCardNo                             : 判断身份证格式
+isMobile                              : 判断手机格式是否正确
+isEmail                               : 判断email格式是否正确
+isNumeric                             : 判断是否全是数字
+isIdCardNo                            : 判断身份证格式
+checkNameChese                        : 检测String是否全是中文
+phoneSetMiddleGone                    : 将手机号变成 151****7788 格式
+phoneSetMiddleEmpty                   : 将手机号变成 151 2233 7788 格式
+isIdCardNo                            : 判断身份证格式
 ```
 
 
 * ### 键盘 -> [KeybordUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/KeybordUtils.java) 
 
 ```
-openKeybord                             : 打开软键盘
-closeKeybord                            : 关闭软键盘
-closeAllKeybord                         : 关闭所有View软键盘
-isSoftInputShow                         : 判断当前软键盘是否打开
+openKeybord                            : 打开软键盘
+closeKeybord                           : 关闭软键盘
+closeAllKeybord                        : 关闭所有View软键盘
+isSoftInputShow                        : 判断当前软键盘是否打开
 ```
 
