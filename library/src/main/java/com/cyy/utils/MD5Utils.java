@@ -8,14 +8,12 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.text.DecimalFormat;
-import java.util.Random;
 
 /**
- * Description：加密工具类
- * Author： koumanwei
- * Date： 2017/3/21 下午5:01
- * Version：1
+ * @author :ChenYangYi
+ * @date :2018/09/19/10:28
+ * @description :MD5
+ * @github :https://github.com/chenyy0708
  */
 
 public class MD5Utils {
@@ -26,8 +24,13 @@ public class MD5Utils {
      * @return
      * @throws NoSuchAlgorithmException
      */
-    public static String getMD5(String str) throws NoSuchAlgorithmException {
-        MessageDigest md = MessageDigest.getInstance("MD5");
+    public static String getMD5(String str) {
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
         md.update(str.getBytes());
         BigInteger bigInteger = new BigInteger(1, md.digest());
         String s = bigInteger.toString(16);
@@ -73,22 +76,5 @@ public class MD5Utils {
             }
         }
         return value;
-    }
-
-
-    public static String getRandomString(int length){
-        String str="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        Random random=new Random();
-        StringBuffer sb=new StringBuffer();
-        for(int i=0;i<length;i++){
-            int number=random.nextInt(62);
-            sb.append(str.charAt(number));
-        }
-        return sb.toString();
-    }
-
-    public static String formatTosepara(float data) {
-        DecimalFormat df = new DecimalFormat("##,###");
-        return df.format(data);
     }
 }

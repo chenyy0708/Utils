@@ -32,4 +32,6 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
     implementation "com.android.support:appcompat-v7:$supportVersion"
+    implementation "com.android.support:support-v4:$supportVersion"
+    implementation "com.orhanobut:logger:$loggerVersion"
 }

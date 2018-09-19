@@ -9,4 +9,6 @@ ext {
                 versionName      : "1.0.0"
     ]
     supportVersion = "27.0.2"
+
+    loggerVersion = "2.2.0"
 }
