@@ -64,6 +64,5 @@ openKeybord                               : 打开软键盘
 closeKeybord                              : 关闭软键盘
 closeAllKeybord                           : 关闭所有View软键盘
 isSoftInputShow                           : 判断当前软键盘是否打开
-
 ```
 
