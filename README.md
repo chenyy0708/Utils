@@ -17,7 +17,7 @@
 
 ## APIs
 
-* ### APP通用 -> [AppUtils.java][AppUtils .java] 
+* ### APP通用 -> [AppUtils.java[https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/AppUtils.java] 
 ```
 getString                      : 判断 Activity 是否存在
 getVersionCode                 : 获取当前本地apk的版本Code
