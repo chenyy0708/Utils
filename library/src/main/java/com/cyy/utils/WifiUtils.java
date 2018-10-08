@@ -20,6 +20,9 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class WifiUtils {
 
+    /**
+     * wifi 安全类型
+     */
     public enum WifiCipherType {
         WIFICIPHER_WEP, WIFICIPHER_WPA, WIFICIPHER_NOPASS, WIFICIPHER_INVALID
     }
@@ -27,19 +30,64 @@ public class WifiUtils {
     private WifiUtils() {
     }
 
-
+    /**
+     * 扫描获取周围 wifi 的信息
+     * @param context
+     * @return
+     */
     public static List<ScanResult> getWifiScanResult(Context context) {
         return ((WifiManager) Objects.requireNonNull(context.getApplicationContext().getSystemService(Context.WIFI_SERVICE))).getScanResults();
     }
 
+    /**
+     * wifi 是否打开
+     * @param context
+     * @return
+     */
     public static boolean isWifiEnable(Context context) {
         return ((WifiManager) Objects.requireNonNull(context.getApplicationContext().getSystemService(Context.WIFI_SERVICE))).isWifiEnabled();
     }
 
+    /**
+     * 设置：打开 wifi 功能
+     *
+     * @param context
+     */
+    public static void openWifi(Context context) {
+        WifiManager wifimanager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        if (wifimanager == null) return;
+        if (!wifimanager.isWifiEnabled()) {
+            wifimanager.setWifiEnabled(true);
+        }
+    }
+
+    /**
+     * 设置：关闭 wifi 功能
+     *
+     * @param context
+     */
+    public static void closeWifi(Context context) {
+        WifiManager wifimanager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        if (wifimanager == null) return;
+        if (wifimanager.isWifiEnabled()) {
+            wifimanager.setWifiEnabled(false);
+        }
+    }
+
+    /**
+     * 获取已连接 wifi 的信息
+     * @param context
+     * @return
+     */
     public static WifiInfo getConnectedWifiInfo(Context context) {
         return ((WifiManager) Objects.requireNonNull(context.getApplicationContext().getSystemService(Context.WIFI_SERVICE))).getConnectionInfo();
     }
 
+    /**
+     * 获取配置信息（一般指已经保存的无线网络）
+     * @param context
+     * @return
+     */
     public static List getConfigurations(Context context) {
         return ((WifiManager) Objects.requireNonNull(context.getApplicationContext().getSystemService(Context.WIFI_SERVICE))).getConfiguredNetworks();
     }
@@ -100,9 +148,9 @@ public class WifiUtils {
 
 
     /**
-     * 接入一个指定的wifi热点
+     * 接入一个指定的wifi热点（连接 wifi，但是这之前，需要一个有账号密码的配置文件）
      *
-     * @param config  wifi 配置文件，包含 wifi 的所有信息
+     * @param config  wifi 配置文件，包含 wifi 的所有信息（名称 以及 密码，假如有点话）
      * @param context
      * @return
      */
@@ -175,43 +223,8 @@ public class WifiUtils {
         return null;
     }
 
-    /**
-     * 设置：打开 wifi 功能
-     *
-     * @param context
-     */
-    public static void openWifi(Context context) {
-        WifiManager wifimanager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        if (wifimanager == null) return;
-        if (!wifimanager.isWifiEnabled()) {
-            wifimanager.setWifiEnabled(true);
-        }
-    }
 
-    /**
-     * 设置：关闭 wifi 功能
-     *
-     * @param context
-     */
-    public static void closeWifi(Context context) {
-        WifiManager wifimanager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        if (wifimanager == null) return;
-        if (wifimanager.isWifiEnabled()) {
-            wifimanager.setWifiEnabled(false);
-        }
-    }
 
-    /**
-     * wifi 功能是否打开
-     *
-     * @param context
-     * @return
-     */
-    public static boolean isOpenWifi(Context context) {
-        WifiManager wifimanager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        if (wifimanager == null) return false;
-        return wifimanager.isWifiEnabled();
-    }
 
     /**
      * 将idAddress转化成string类型的Id字符串
