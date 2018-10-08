@@ -67,7 +67,7 @@ closeAllKeybord                        : 关闭所有View软键盘
 isSoftInputShow                        : 判断当前软键盘是否打开
 ```
 
-* ### 自定义WIFI连接 -> [WifiUtils.java](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/WifiUtils.java)  
+* ### 自定义WIFI连接 -> [WifiUtils.java](https://github.com/chenyy0708/Utils/blob/master/library/src/main/java/com/cyy/utils/WifiUtils.java)  
 
 ```
 getWifiScanResult                      : 获取设备周围 WIFI 信息集合
