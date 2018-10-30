@@ -74,5 +74,19 @@ getWifiScanResult                      : 获取设备周围 WIFI 信息集合
 createWifiConfig                       : 创建 WIFI 配置文件
 addNetWork                             : 连接指定 WIFI
 ``` 
-其它方法详见代码                        
+其它方法详见代码 
 
+* ### 改变控件字体样式 -> [TypefaceUtil](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/TypefaceUtil.java)                       
+
+```java  
+
+replaceFont                            : 替换整个界面或者某个控件的字体
+
+```
+
+* ### 处理系统返回键的连续点击事件 -> [KeyBackUtil](https://github.com/chenyy0708/Utils/blob/4df16c39292c621b9ff949c96c9f9350ee0a3d8a/library/src/main/java/com/cyy/utils/KeyBackUtil.java)
+```java  
+
+setOnBackClickListener                  : 监听返回键第一次和第二次点击事件
+
+```
